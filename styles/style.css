@@ -225,14 +225,13 @@ nav .nav-links li a {
 }
 
 .contact {
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background: radial-gradient(#525252, #131313);
-  min-height: 90vh;
+  min-height: 80vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -253,6 +252,7 @@ nav .nav-links li a {
 
 .contact .circle {
   z-index: -1;
+  height: 100%;
 }
 
 .contact .line1 {
@@ -394,6 +394,10 @@ nav .nav-links li a {
 .form-container input[type="checkbox"]:checked + label {
   color: #f00;
   font-style: normal;
+}
+
+.form-container .fixInput {
+  padding: 0;
 }
 
 footer {
