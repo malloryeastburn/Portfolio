@@ -97,12 +97,21 @@ a {
     grid-template-rows: 1fr 1fr 1fr;
     img {
       object-fit: contain;
+      height: auot;
+      width: 100%;
+      grid-row: 2/3;
+    }
+    h2 {
+      grid-row: 1/2;
     }
     img,
     h2,
     .info {
       grid-column: 2/3;
       text-align: center;
+    }
+    .info {
+      grid-row: 3/4;
     }
   }
   .projects {
