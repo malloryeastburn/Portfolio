@@ -491,11 +491,13 @@ footer h1 {
   .showcase {
     -ms-grid-columns: 10% 1fr 10%;
         grid-template-columns: 10% 1fr 10%;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
   }
   .showcase img {
-    width: 100%;
     -o-object-fit: contain;
        object-fit: contain;
+    width: 100%;
   }
   .showcase img,
   .showcase h2,
