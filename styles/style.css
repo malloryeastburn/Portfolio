@@ -117,7 +117,7 @@ nav .nav-links li a {
 .showcase {
   display: -ms-grid;
   display: grid;
-  min-height: 60vh;
+  min-height: 90vh;
   -ms-grid-columns: 10% minmax(5rem, 1fr) minmax(5rem, 1fr) minmax(5rem, 1fr) 10%;
       grid-template-columns: 10% minmax(5rem, 1fr) minmax(5rem, 1fr) minmax(5rem, 1fr) 10%;
   -ms-grid-rows: 1fr 2fr 1fr;
