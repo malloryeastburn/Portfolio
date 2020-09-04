@@ -111,6 +111,7 @@ nav .nav-links li a {
   display: -ms-grid;
   display: grid;
   min-height: 60vh;
+  max-height: 80vh;
   -ms-grid-columns: 10% minmax(5rem, 1fr) minmax(5rem, 1fr) minmax(5rem, 1fr) 10%;
       grid-template-columns: 10% minmax(5rem, 1fr) minmax(5rem, 1fr) minmax(5rem, 1fr) 10%;
   -ms-grid-rows: 1fr 2fr 1fr;
@@ -137,7 +138,7 @@ nav .nav-links li a {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
-  height: 60%;
+  height: 100%;
 }
 
 .showcase .info {
@@ -544,7 +545,6 @@ footer h1 {
   .contact h2 {
     font-size: 5rem;
     text-align: center;
-    width: 80%;
   }
   .form-container .col-xs-12,
   .form-container .col-sm-12,
