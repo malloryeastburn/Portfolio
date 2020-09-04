@@ -12,7 +12,6 @@ nav {
   padding: 0;
   display: flex;
   #logo {
-    flex: 3;
     position: relative;
     align-self: center;
     left: 10%;
@@ -38,7 +37,6 @@ nav {
     justify-content: space-around;
     align-items: center;
     margin-left: auto;
-    flex: 4;
   }
 
   .nav-links li a {
