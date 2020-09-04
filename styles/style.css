@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  background: #070707;
 }
 
 * {
@@ -276,7 +277,7 @@ nav .nav-links li a {
 .form-container {
   background: radial-gradient(#525252, #131313);
   padding-top: 85px;
-  min-height: 100vh;
+  min-height: 90vh;
   /* ///// inputs /////*/
 }
 
@@ -364,7 +365,8 @@ nav .nav-links li a {
 .form-container .input-container {
   width: 650px;
   max-width: 100%;
-  margin: 20px auto 25px auto;
+  margin: 20px auto 0px auto;
+  padding-bottom: 15px;
 }
 
 .form-container .submit-btn {
@@ -405,7 +407,7 @@ footer {
   position: sticky;
   z-index: 2;
   bottom: 0;
-  min-height: 100px;
+  min-height: 10vh;
   padding-left: 10%;
   padding-right: 10%;
   display: -webkit-box;

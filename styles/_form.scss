@@ -1,7 +1,7 @@
 .form-container {
   background: radial-gradient(#525252, #131313);
   padding-top: 85px;
-  min-height: 100vh;
+  min-height: 90vh;
 
   h1 {
     font-family: "Poppins", sans-serif, "arial";
@@ -89,7 +89,8 @@
   .input-container {
     width: 650px;
     max-width: 100%;
-    margin: 20px auto 25px auto;
+    margin: 20px auto 0px auto;
+    padding-bottom: 15px;
   }
 
   .submit-btn {
