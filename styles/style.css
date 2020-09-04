@@ -288,6 +288,7 @@ a {
   font-size: 72px;
   color: white;
   text-align: center;
+  width: 100%;
 }
 
 .form-container h4 {
@@ -296,6 +297,7 @@ a {
   font-size: 20px;
   color: #ed145b;
   line-height: 1.5;
+  width: 100%;
 }
 
 .form-container input:focus ~ label,
@@ -387,22 +389,6 @@ a {
           transform: translateY(1px);
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);
-}
-
-@media (max-width: 768px) {
-  .form-container .submit-btn {
-    width: 100%;
-    float: none;
-    text-align: center;
-  }
-  .form-container .styled-input {
-    width: 300rem !important;
-    margin: 1rem auto;
-  }
-  .form-container .phone {
-    float: left !important;
-    width: 150rem !important;
-  }
 }
 
 .form-container input[type="checkbox"] + label {
@@ -511,17 +497,16 @@ footer h1 {
     font-size: 3rem;
     text-align: center;
   }
-  .form-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+  .form-container .col-xs-12,
+  .form-container .col-sm-12,
+  .form-container .col-md-6,
+  .form-container .styled-input {
+    width: 100% !important;
+    padding: 0 !important;
+    overflow: hidden;
+  }
+  .form-container .phone {
+    float: left !important;
   }
   .footer h1 {
     -webkit-box-flex: 1;
