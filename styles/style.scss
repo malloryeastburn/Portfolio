@@ -51,19 +51,44 @@ a {
 @import "form";
 @import "footer";
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   html {
     font-size: 50%;
   }
   nav {
-    #logo {
-      flex: 1;
+    position: relative;
+    .line {
+      width: 30px;
+      height: 3px;
+      background: white;
+      margin: 5px;
+      padding: 2px;
     }
-
-    ul {
-      li {
-        margin-left: 5rem;
-      }
+    .hamburger {
+      position: absolute;
+      cursor: pointer;
+      right: 5%;
+      top: 50%;
+      transform: translate(-5%, -50%);
+      z-index: 2;
+      background: #ed145b;
+      border-radius: 3px;
+    }
+    .nav-links {
+      position: fixed;
+      background: #ed145b;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-;
+      clip-path: circle(100px at 120% -20%);
+      -webkit-clip-path: circle(100px at 120% -20%);
+      transition: all 1000ms ease-in-out;
+      z-index: 1;
+    }
+    .nav-links.open {
+      clip-path: circle(1200px at 120% -20%);
+      -webkit-clip-path: circle(1200px at 120% -20%);
     }
   }
   .showcase {
@@ -91,15 +116,15 @@ a {
         margin: 5rem 0rem;
       }
     }
-    .contact {
-      overflow: hidden;
-      img {
-        width: 60%;
-      }
-      h2 {
-        font-size: 3rem;
-        text-align: center;
-      }
+  }
+  .contact {
+    overflow: hidden !important;
+    img {
+      width: 60%;
+    }
+    h2 {
+      font-size: 5rem;
+      text-align: center;
     }
   }
   .form-container {
@@ -120,8 +145,16 @@ a {
       text-align: center;
     }
   }
-  .footer {
+  footer {
+    position: relative;
+    padding-top: 5px;
+    height: 100%;
+    box-sizing: none !important;
+    justify-content: space-around;
     h1 {
+      flex: 3;
+    }
+    ul {
       flex: 1;
     }
   }

@@ -2,31 +2,20 @@
   background: radial-gradient(#525252, #131313);
 }
 
-.nav-container {
-  background: rgb(7, 7, 7);
+nav {
   position: sticky;
-  z-index: 2;
   top: 0;
-  nav {
-    width: 80%;
-    margin: auto;
-    min-height: 10vh;
-    padding: 3rem 0rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  ul {
-    display: flex;
-    justify-content: space-between;
-    flex: 1;
-    list-style: none;
-  }
-
+  z-index: 3;
+  height: 10vh;
+  background: rgb(7, 7, 7);
+  margin: 0;
+  padding: 0;
+  display: flex;
   #logo {
     flex: 3;
     position: relative;
+    align-self: center;
+    left: 10%;
     &::after {
       content: "";
       position: absolute;
@@ -41,13 +30,22 @@
     }
   }
 
-  .resume {
-    background: #ee2163;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
+  .nav-links {
+    display: flex;
+    width: 50%;
+    list-style: none;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    flex: 4;
+  }
+
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
   }
 }
-
 .showcase {
   display: grid;
   min-height: 60vh;
