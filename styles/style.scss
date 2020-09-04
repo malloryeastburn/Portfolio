@@ -95,6 +95,7 @@ a {
   .showcase {
     grid-template-columns: 10% 1fr 10%;
     grid-template-rows: 1fr 1fr 1fr;
+    min-height: 90vh;
     img {
       object-fit: contain;
       height: auto;
