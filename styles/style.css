@@ -508,6 +508,11 @@ footer h1 {
   .form-container .phone {
     float: left !important;
   }
+  .form-container .submit-btn {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
   .footer h1 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
