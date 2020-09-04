@@ -7,10 +7,127 @@
       href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/eb2cf6c667.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Mallory Eastburn</title>
   </head>
   <body>
+    <main>
+      <div class="nav-container">
+        <nav>
+          <h1 id="logo"><a href="#home">Mallory</a></h1>
+          <ul>
+            <li><a class="projects" href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a class="resume" href="#resume">Resume</a></li>
+          </ul>
+        </nav>
+      </div>
+      <section class="home">
+        <div class="showcase">
+          <h2>Mallory Eastburn</h2>
+          <img src="./img/mal copy.png" alt="pexel img" />
+          <div class="info">
+            <h3>a web developer</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </section>
+      <div class="projects-container">
+        <section class="projects" id="projects">
+          <h2>Projects</h2>
+          <div class="cards">
+            <div class="card">
+              <img src="./img/hiclipart.com.jpg" alt="" />
+              <h4>Lorem ipsum dolor</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card">
+              <img src="./img/hiclipart.com.jpg" alt="" />
+              <h4>Lorem ipsum dolor</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card">
+              <img src="./img/hiclipart.com.jpg" alt="" />
+              <h4>Lorem ipsum dolor</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </section>
+        <img class="wave" src="./img/wave.png" width="800" alt="wave" />
+      </div>
+      <section class="contact" id="contact">
+        <h2 class="line1">You bring the coffee,</h2>
+        <h2 class="line2">I'll bring the code.</h2>
+
+        <img class="heart" src="img/hiclipart.com.jpg" alt="" />
+        <img class="circle" src="img/circle.png" alt="" />
+      </section>
+      <div class="form-container col">
+        <div class="row">
+          <h1>hello world</h1>
+        </div>
+        <div class="row">
+          <h4 style="text-align: center">
+            <i class="fas fa-arrow-circle-down"></i>
+            I'd love to hear from you!
+            <i class="fas fa-arrow-circle-down"></i>
+          </h4>
+        </div>
+        <div class="row input-container">
+          <div class="col-xs-12">
+            <div class="styled-input wide">
+              <input type="text" required />
+              <label>Name</label>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="styled-input">
+              <input type="text" required />
+              <label>Email</label>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="styled-input phone" style="float: right">
+              <input type="text" required />
+              <label>Phone Number</label>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="styled-input wide">
+              <textarea required></textarea>
+              <label>Message</label>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="btn-lrg submit-btn">Send Message</div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <h1>Mallory Eastburn</h1>
+        <ul>
+          <li>
+            <a href=""><i class="fab fa-twitter-square"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-instagram-square"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-github-square"></i></a>
+          </li>
+        </ul>
+      </footer>
+    </main>
     <script src="src/index.js"></script>
   </body>
 </html>
