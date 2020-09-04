@@ -118,7 +118,6 @@ nav .nav-links li a {
   display: -ms-grid;
   display: grid;
   min-height: 60vh;
-  max-height: 80vh;
   -ms-grid-columns: 10% minmax(5rem, 1fr) minmax(5rem, 1fr) minmax(5rem, 1fr) 10%;
       grid-template-columns: 10% minmax(5rem, 1fr) minmax(5rem, 1fr) minmax(5rem, 1fr) 10%;
   -ms-grid-rows: 1fr 2fr 1fr;
@@ -522,7 +521,7 @@ footer h1 {
     width: 100%;
   }
   .projects .cards .card {
-    margin: 5rem 0rem;
+    margin: 5rem 0rem !important;
   }
   .contact {
     overflow: hidden !important;

@@ -49,7 +49,7 @@ nav {
 .showcase {
   display: grid;
   min-height: 60vh;
-  max-height: 80vh;
+
   grid-template-columns:
     10% minmax(5rem, 1fr) minmax(5rem, 1fr) minmax(5rem, 1fr)
     10%;
