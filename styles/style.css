@@ -264,12 +264,14 @@ a {
 }
 
 .contact .line1 {
+  font-size: 3rem;
   top: 25%;
   z-index: 1;
   text-align: center;
 }
 
 .contact .line2 {
+  font-size: 3rem;
   top: 75%;
   z-index: 1;
   text-align: center;
@@ -508,7 +510,7 @@ footer h1 {
     width: 60%;
   }
   .projects .contact h2 {
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: center;
   }
   .form-container {
