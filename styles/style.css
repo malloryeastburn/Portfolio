@@ -252,6 +252,8 @@ nav .nav-links li a {
   margin: 0 auto;
   background: #ccc;
   overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .projects-container .projects .cards .card .h_iframe {
