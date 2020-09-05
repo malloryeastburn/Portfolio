@@ -648,6 +648,10 @@ footer h1 {
   .projects .cards .card {
     margin: 5rem 0rem !important;
   }
+  .projects .cards .card iframe {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
   .contact {
     overflow: hidden !important;
   }
