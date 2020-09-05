@@ -449,9 +449,6 @@ footer h1 {
   html {
     font-size: 50%;
   }
-  nav {
-    position: relative;
-  }
   nav .line {
     width: 30px;
     height: 3px;
@@ -466,7 +463,7 @@ footer h1 {
     top: 50%;
     -webkit-transform: translate(-5%, -50%);
             transform: translate(-5%, -50%);
-    z-index: 2;
+    z-index: 3;
     background: #ed145b;
     border-radius: 3px;
   }
@@ -487,10 +484,33 @@ footer h1 {
     -webkit-transition: all 1000ms ease-in-out;
     transition: all 1000ms ease-in-out;
     z-index: 1;
+    pointer-events: none;
   }
   nav .nav-links.open {
     clip-path: circle(1200px at 120% -20%);
     -webkit-clip-path: circle(1200px at 120% -20%);
+    pointer-events: all;
+  }
+  nav .nav-links li {
+    opacity: 0;
+  }
+  nav .nav-links li a {
+    font-size: 25px;
+  }
+  nav .nav-links li:nth-child(1) {
+    -webkit-transition: all 0.5s ease 0.2s;
+    transition: all 0.5s ease 0.2s;
+  }
+  nav .nav-links li:nth-child(2) {
+    -webkit-transition: all 0.5s ease 0.4s;
+    transition: all 0.5s ease 0.4s;
+  }
+  nav .nav-links li:nth-child(3) {
+    -webkit-transition: all 0.5s ease 0.6s;
+    transition: all 0.5s ease 0.6s;
+  }
+  nav .nav-links li.fade {
+    opacity: 1;
   }
   .showcase {
     -ms-grid-columns: 10% 1fr 10%;
