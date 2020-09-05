@@ -439,7 +439,7 @@ nav .nav-links li a {
 }
 
 .form-container .submit-btn {
-  margin: 0 auto;
+  margin: 0 auto 10vh 0;
   padding: 7px 35px;
   border-radius: 60px;
   display: inline-block;
