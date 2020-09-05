@@ -251,6 +251,7 @@ nav .nav-links li a {
 }
 
 .projects-container .projects .cards .card .h_iframe {
+  border-radius: 2rem;
   position: relative;
   padding-top: 90%;
   height: 100%;
@@ -646,7 +647,7 @@ footer h1 {
     width: 100%;
   }
   .projects .cards .card {
-    margin: 0 !important;
+    margin: 1rem !important;
   }
   .projects .cards .card iframe {
     width: 100%;
