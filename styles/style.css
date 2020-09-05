@@ -262,6 +262,8 @@ nav .nav-links li a {
   padding-top: 90%;
   height: 100%;
   overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .projects-container .projects .cards .card .h_iframe iframe {
