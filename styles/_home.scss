@@ -25,8 +25,18 @@ nav {
       background: #ed145b;
       border-radius: 50%;
       transform: translate(15%, -20%);
-      mix-blend-mode: screen;
+      z-index: -1;
     }
+    a {
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+    }
+  }
+  #resume {
+    background: #ed145b;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
   }
 
   .nav-links {
@@ -71,5 +81,18 @@ nav {
     h3 {
       padding-bottom: 3rem;
     }
+  }
+  span {
+    font-size: 7rem;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(50px);
+    display: inline-block;
+    color: #ed145b;
+  }
+  span.fly {
+    opacity: 1;
+    transform: translateY(0px);
+    color: white;
   }
 }

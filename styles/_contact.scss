@@ -6,6 +6,7 @@
   flex-direction: column;
   position: relative;
   z-index: 0;
+
   img,
   .circle,
   h2 {
@@ -16,17 +17,21 @@
   }
   .circle {
     z-index: -1;
-    height: 100%;
+    height: 90%;
+  }
+  .heart {
+    height: 70%;
+    opacity: 0.9;
   }
 
   .line1 {
-    top: 25%;
+    top: 20%;
     z-index: 1;
     text-align: center;
     width: 80%;
   }
   .line2 {
-    top: 75%;
+    top: 80%;
     z-index: 1;
     text-align: center;
     width: 80%;

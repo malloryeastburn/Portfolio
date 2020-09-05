@@ -80,19 +80,23 @@ a {
       width: 100%;
       flex-direction: column;
       justify-content: space-;
-      clip-path: ellipse(0px 0px at 0% 100%);
-      -webkit-clip-path: ellipse(0px 0px at 0% 100%);
+      clip-path: ellipse(0px 0px at 100% 0%);
+      -webkit-clip-path: ellipse(0px 0px at 100% 0%);
       transition: all 1000ms ease-in-out;
       z-index: 4;
       pointer-events: none;
     }
     .nav-links.open {
-      margin-left: -10%;
       position: static;
-      clip-path: ellipse(180% 180% at 0% 100%);
-      -webkit-clip-path: ellipse(180% 180% at 0% 100%);
+      clip-path: ellipse(180% 180% at 100% 0%);
+      -webkit-clip-path: ellipse(180% 180% at 100% 0%);
       pointer-events: all;
-      overflow: hidden;
+    }
+    #resume {
+      background: white;
+      color: #ed145b;
+      padding: 1rem 2rem;
+      border-radius: 2rem;
     }
     .nav-links li {
       opacity: 0;
@@ -134,6 +138,7 @@ a {
     }
     .info {
       grid-row: 3/4;
+      justify-self: center;
     }
   }
   .projects {

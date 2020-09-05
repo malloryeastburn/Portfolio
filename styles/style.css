@@ -84,7 +84,19 @@ nav #logo::after {
   border-radius: 50%;
   -webkit-transform: translate(15%, -20%);
           transform: translate(15%, -20%);
-  mix-blend-mode: screen;
+  z-index: -1;
+}
+
+nav #logo a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+nav #resume {
+  background: #ed145b;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
 }
 
 nav .nav-links {
@@ -153,6 +165,24 @@ nav .nav-links li a {
 
 .showcase .info h3 {
   padding-bottom: 3rem;
+}
+
+.showcase span {
+  font-size: 7rem;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  display: inline-block;
+  color: #ed145b;
+}
+
+.showcase span.fly {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  color: white;
 }
 
 .projects-container {
@@ -252,18 +282,23 @@ nav .nav-links li a {
 
 .contact .circle {
   z-index: -1;
-  height: 100%;
+  height: 90%;
+}
+
+.contact .heart {
+  height: 70%;
+  opacity: 0.9;
 }
 
 .contact .line1 {
-  top: 25%;
+  top: 20%;
   z-index: 1;
   text-align: center;
   width: 80%;
 }
 
 .contact .line2 {
-  top: 75%;
+  top: 80%;
   z-index: 1;
   text-align: center;
   width: 80%;
@@ -479,20 +514,24 @@ footer h1 {
     -webkit-box-pack: space-;
         -ms-flex-pack: space-;
             justify-content: space-;
-    clip-path: ellipse(0px 0px at 0% 100%);
-    -webkit-clip-path: ellipse(0px 0px at 0% 100%);
+    clip-path: ellipse(0px 0px at 100% 0%);
+    -webkit-clip-path: ellipse(0px 0px at 100% 0%);
     -webkit-transition: all 1000ms ease-in-out;
     transition: all 1000ms ease-in-out;
     z-index: 4;
     pointer-events: none;
   }
   nav .nav-links.open {
-    margin-left: -10%;
     position: static;
-    clip-path: ellipse(180% 180% at 0% 100%);
-    -webkit-clip-path: ellipse(180% 180% at 0% 100%);
+    clip-path: ellipse(180% 180% at 100% 0%);
+    -webkit-clip-path: ellipse(180% 180% at 100% 0%);
     pointer-events: all;
-    overflow: hidden;
+  }
+  nav #resume {
+    background: white;
+    color: #ed145b;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
   }
   nav .nav-links li {
     opacity: 0;
@@ -548,6 +587,8 @@ footer h1 {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   .projects {
     -webkit-box-align: center;
