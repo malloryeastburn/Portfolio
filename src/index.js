@@ -5,5 +5,11 @@ hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("open");
   links.forEach((link) => {
     link.classList.toggle("fade");
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+      links.forEach((link) => {
+        link.classList.remove("fade");
+      });
+    });
   });
 });

@@ -69,7 +69,7 @@ a {
       right: 5%;
       top: 50%;
       transform: translate(-5%, -50%);
-      z-index: 3;
+      z-index: 5;
       background: #ed145b;
       border-radius: 3px;
     }
@@ -80,16 +80,19 @@ a {
       width: 100%;
       flex-direction: column;
       justify-content: space-;
-      clip-path: circle(100px at 120% -20%);
-      -webkit-clip-path: circle(100px at 120% -20%);
+      clip-path: ellipse(0px 0px at 0% 100%);
+      -webkit-clip-path: ellipse(0px 0px at 0% 100%);
       transition: all 1000ms ease-in-out;
-      z-index: 1;
+      z-index: 4;
       pointer-events: none;
     }
     .nav-links.open {
-      clip-path: circle(1200px at 120% -20%);
-      -webkit-clip-path: circle(1200px at 120% -20%);
+      margin-left: -10%;
+      position: static;
+      clip-path: ellipse(180% 180% at 0% 100%);
+      -webkit-clip-path: ellipse(180% 180% at 0% 100%);
       pointer-events: all;
+      overflow: hidden;
     }
     .nav-links li {
       opacity: 0;
