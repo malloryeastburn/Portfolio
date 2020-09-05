@@ -34,27 +34,19 @@
         text-align: center;
         border-radius: 2rem;
         overflow: hidden;
-        object-fit: contain;
-
         .wrapper {
-          border-radius: 2rem;
           width: 100%;
           max-width: 600px;
           height: 100%;
           margin: 0 auto;
           background: #ccc;
-          overflow: hidden;
-          object-fit: contain;
         }
         .h_iframe {
-          border-radius: 2rem;
           position: relative;
           padding-top: 90%;
           height: 100%;
-          overflow: hidden;
         }
         .h_iframe iframe {
-          border-radius: 2rem;
           position: absolute;
           top: 0;
           left: 0;
