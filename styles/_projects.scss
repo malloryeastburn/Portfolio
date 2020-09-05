@@ -27,7 +27,7 @@
 
       .card {
         background: white;
-        margin: 10rem 5rem;
+        margin: 2rem;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -39,10 +39,11 @@
         }
         p {
           padding: 2rem;
+          padding-bottom: 0;
         }
         img {
           object-fit: cover;
-          width: 70%;
+          width: 100%;
           margin: 0 auto;
         }
       }
