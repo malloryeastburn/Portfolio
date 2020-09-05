@@ -122,7 +122,7 @@ nav .nav-links li a {
 .showcase {
   display: -ms-grid;
   display: grid;
-  min-height: 60vh;
+  min-height: 80vh;
   max-height: 80vh;
   -ms-grid-columns: 10% minmax(5rem, 1fr) minmax(5rem, 1fr) minmax(5rem, 1fr) 10%;
       grid-template-columns: 10% minmax(5rem, 1fr) minmax(5rem, 1fr) minmax(5rem, 1fr) 10%;
@@ -168,7 +168,7 @@ nav .nav-links li a {
 }
 
 .showcase span {
-  font-size: 7rem;
+  font-size: 6rem;
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -478,6 +478,14 @@ footer h1 {
       -ms-flex: 3;
           flex: 3;
   margin: 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .showcase h2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+  }
 }
 
 @media screen and (max-width: 768px) {
