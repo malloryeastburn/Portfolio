@@ -243,11 +243,13 @@ nav .nav-links li a {
 }
 
 .projects-container .projects .cards .card .wrapper {
+  border-radius: 2rem;
   width: 100%;
   max-width: 600px;
   height: 100%;
   margin: 0 auto;
   background: #ccc;
+  overflow: hidden;
 }
 
 .projects-container .projects .cards .card .h_iframe {
@@ -255,6 +257,7 @@ nav .nav-links li a {
   position: relative;
   padding-top: 90%;
   height: 100%;
+  overflow: hidden;
 }
 
 .projects-container .projects .cards .card .h_iframe iframe {
