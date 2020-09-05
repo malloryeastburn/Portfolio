@@ -78,6 +78,7 @@ a {
       border-radius: 3px;
     }
     .nav-links {
+      top: 0;
       position: fixed;
       background: #ed145b;
       height: 100vh;
@@ -91,7 +92,7 @@ a {
       pointer-events: none;
     }
     .nav-links.open {
-      position: static;
+      top: 0;
       clip-path: ellipse(180% 180% at 100% 0%);
       -webkit-clip-path: ellipse(180% 180% at 100% 0%);
       pointer-events: all;
@@ -201,6 +202,13 @@ a {
     }
     ul {
       flex: 1;
+    }
+  }
+}
+@media screen and (max-width: 390px) {
+  .showcase {
+    span {
+      font-size: 4rem;
     }
   }
 }
