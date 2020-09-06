@@ -35,7 +35,6 @@
           <li><a id="resume" href="#">Resume</a></li>
         </ul>
       </nav>
-
       <section class="home" id="home">
         <div class="showcase">
           <h2 class="myName">Mallory&nbsp;Eastburn</h2>
@@ -138,57 +137,69 @@
             <i class="fas fa-arrow-circle-down"></i>
           </h4>
         </div>
-        <div class="row input-container">
-          <div class="col-xs-12">
-            <div class="styled-input wide">
-              <input type="text" required />
-              <label>Name</label>
+        <form action="POST" name="contact" method="POST" data-netlify="true">
+          <div class="row input-container">
+            <div class="col-xs-12">
+              <div class="styled-input wide">
+                <input type="text" name="name" required />
+                <label>Name</label>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 fixInput">
+              <div class="styled-input">
+                <input type="text" name="email" required />
+                <label>Email</label>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 fixInput">
+              <div class="styled-input phone" name="phone" style="float: right">
+                <input type="text" />
+                <label>Phone</label>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="styled-input wide">
+                <textarea name="message" required></textarea>
+                <label>Message</label>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <button type="submit" class="btn-lrg submit-btn">
+                Send Message
+              </button>
             </div>
           </div>
-          <div class="col-md-6 col-sm-12 fixInput">
-            <div class="styled-input">
-              <input type="text" required />
-              <label>Email</label>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12 fixInput">
-            <div class="styled-input phone" style="float: right">
-              <input type="text" required />
-              <label>Phone</label>
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <div class="styled-input wide">
-              <textarea required></textarea>
-              <label>Message</label>
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <div class="btn-lrg submit-btn">Send Message</div>
-          </div>
-        </div>
+        </form>
       </div>
       <footer>
         <h1>Mallory Eastburn</h1>
         <ul>
           <li>
-            <a href="https://twitter.com/MalloryEastburn"
-            target="_blank""><i class="fab fa-twitter-square"></i></a>
+            <a href="https://twitter.com/MalloryEastburn" target="_blank"
+              ><i class="fab fa-twitter-square"></i
+            ></a>
           </li>
           <li>
-            <a href="https://www.facebook.com/mallory.eastburn/"
-            target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.facebook.com/mallory.eastburn/" target="_blank"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/mallory-eastburn-55464048"
-            target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a
+              href="https://www.linkedin.com/in/mallory-eastburn-55464048"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
           </li>
           <li>
-            <a href="https://www.instagram.com/mal_theWebDev/"
-            target="_blank"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://www.instagram.com/mal_theWebDev/" target="_blank"
+              ><i class="fab fa-instagram-square"></i
+            ></a>
           </li>
           <li>
-            <a href="https://github.com/Ramayama1" target="_blank"><i class="fab fa-github-square"></i></a>
+            <a href="https://github.com/Ramayama1" target="_blank"
+              ><i class="fab fa-github-square"></i
+            ></a>
           </li>
         </ul>
       </footer>
