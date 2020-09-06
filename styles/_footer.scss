@@ -17,6 +17,9 @@ footer {
     list-style: none;
     justify-content: space-between;
     margin: 0;
+    a:hover {
+      color: white;
+    }
   }
   h1 {
     flex: 3;
